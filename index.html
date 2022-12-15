@@ -1,0 +1,294 @@
+<!doctype html>
+
+<html class="no-js" lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDES1060 Project 2</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/foundation-datepicker.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/atz7pbb.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+
+  <body>
+
+<section id="header" class="header">
+    <header>
+
+      <div class="grid-container">
+      <!-- logo -->
+      <div class="grid-x grid-margin-x">
+          
+          <div class="cell medium-4"> 
+          <img src="img/logo.png"></img>
+          </div>
+      
+      <!-- nav -->
+        <div class="cell medium-8 large-offset-4 large-4 text-right"> 
+        <ul class="menu align-right">
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#amenities">Amenities</a></li>
+        <li><a href="#story">Mission</a></li>
+      </ul>
+        </div>
+
+      </div>
+
+      </div>
+
+    </header>
+</section>
+
+<section class="hero">
+  
+  <video autoplay loop muted>
+    <source src="img/zen.mp4" type="video/mp4">
+  </video>
+ <div class="grid-container"> 
+<!-- message -->
+  <div class="grid-x grid-margin-x">
+    <div class="cell">
+      <h2>Stop By...</h2>
+      <h1>OPEN YOUR ZEN.</h1>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="booking">
+
+<div class="grid-container"> 
+<!-- message -->
+  <div class="grid-x grid-margin-x">
+    <div class="cell">
+<!-- datepicker -->
+<table class="table">
+      <thead>
+        <tr class="grid-x">
+          <th class="cell small-6">Check in:
+          <input type="text" class="span2" value="" id="dpd1">
+          </th>
+            
+          <th class="cell small-6">Check out:
+          <input type="text" class="span2" value="" id="dpd2">
+          </th>
+        </tr>
+        <tr class="grid-x">
+          <th class="cell">
+            <input type="submit" class="submit button radius small" value="Book Now!" data-open="confirmation-overlay">
+          </th>
+        </tr>        
+      </thead>
+    </table>
+  </div>
+</div>
+</div>
+
+    <!--
+    - overlay window with spans used to show data from datepicker
+    - edit the grid however you would like to fit your layout, but
+    - do not delete the <span class="dpd1"></span> and <span class="dpd2"></span> tags, these are used to show the user the dates they selected
+    - this section can go anywhere in your code, but to keep things organized, place it after the section where you have your date picker form
+    -->
+
+    <div id="confirmation-overlay" class="reveal" data-reveal>
+      <div class="grid-x">
+        <div class="cell large-7">
+          <div class="overlay">
+            <h3>Success</h3>
+            <h6>You booked a room!</h6>
+          </div>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">&times;</span></button>
+    </div>
+
+</section>
+
+  <!-- <div class="grid-x">
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+  </div> -->
+
+<section id="rooms" class="rooming">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x align-middle">
+      <!-- header -->
+          <div class="cell text-center">
+          <h3>Rooming</h3>
+          <h6>To save everyone the time and stress of finding a room,
+              we offer one type of room to all of our guests. You 
+              will never want to stay in another hotel room again... </h6>
+          </div>
+    </div>
+
+    <div class="grid-x grid-margin-x grid-margin-y align-middle">
+      <!-- description&img -->
+          <div class="cell small-order-2 medium-order-1 medium-6">
+          <h3>Serenity</h3>
+          <p>Recharge in our newly renovated serenity rooms equipped with 24/7 full reception WiFi anywhere in the building provided by StarLink, inclusive robes & toiletries, a mini-library, kitchen, and a smart TV.</p>
+          <a href="#header" class="button">Book Now</a>
+          </div>
+
+          <div class="cell small-order-1 medium-order-2 medium-6">
+          <img src="img/bedroom.jpg">
+          </div>
+    </div>
+  </div>        
+</section>
+
+<section id="amenities" class="amenities">
+<div class="grid-container">
+  <!-- header -->
+  <div class="grid-x grid-margin-x">
+      <div class="cell text-center">
+        <h3>Amenitites</h3>
+        <h6>Take advantage of our inclusive massages, Unwind in one of our Bamboo hot tubs, or Grab a bite to eat and some fresh air in our Greenhouse bar & restaurant. Stop by one (or all) of our relaxation amenities to reallymaximize your stay. </h6>
+      </div>
+    </div>
+
+  <!-- content -->
+  <div class="grid-x grid-margin-x grid-margin-y">
+      
+      <div class="cell medium-4">
+        <img src="img/amenities1.jpg">
+        <h4>GH Restaurant & Bar</h4>
+        <p>Enjoy the air, get some food, and catch a vibe at our garden house Restaurant & Bar</p>
+        <a href="#header" class="button">Book Now</a>
+      </div>
+      
+      <div class="cell medium-4">
+        <img src="img/amenities2.jpg">
+        <h4>Ignite Massage & Spa</h4>
+        <p>Come relax at our state of the art massage therapy & spa center</p>
+        <a href="#header" class="button">Book Now</a>
+      </div>
+      
+      <div class="cell medium-4">
+        <img src="img/amenities3.jpg">
+        <h4>Bamboo Pool & Hot Tubs</h4>
+        <p>Soak in the moment in our newly built Pool & Hot Tubs made out of bamboo</p>
+        <a href="#header" class="button">Book Now</a>
+      </div>
+    </div>
+
+</div>
+</section>
+
+<section id="story" class="mission">
+<div class="grid-container">
+  <!-- statement&defintion -->
+
+<div class="grid-x grid-margin-x grid-margin-y">
+
+    <div class="cell medium-5 text-center">
+
+    <h5>We live by making sure everyone who stays at 
+Hotel Chalarosi has the most relaxing stay possible. 
+If you’re not relaxed, we didn’t do our job.</h5>
+    </div>
+
+    <div class="cell medium-offset-1 medium-6">
+      
+      <!-- IMAGE OF DEFINITION -->
+      <div class="definition text-center">
+      <img src="img/definition.png">
+      </div>
+    </div>
+
+</div>
+</div>
+</section>
+
+<footer>
+
+  <div class="grid-container">
+    
+    <div class="grid-x grid-margin-x align-middle">
+        <div class="cell medium-6">
+          <!-- IMAGE OF LOGO -->
+          <a href="#header"><img src="img/logo.png"></img></a>
+        </div>
+        
+        <div class="cell medium-6 text-center">
+          <div class="footerlist">
+          <h1>Contact Us</h1>
+          <p><a href="tel:857-294-9327">857-294-9327</a></br>
+             <a href="mailto:help@hotelchalorosi.com"> help@hotelchalarosi.com</a></br>
+             <a href="https://www.google.com/maps/place/12-14+Utopia+Pkwy,+Whitestone,+NY+11357/@40.7899661,-73.7944342,21z/data=!4m5!3m4!1s0x89c28a5f7ed94f2f:0x79a259c933fb89db!8m2!3d40.7900625!4d-73.7945529">14 Utopia Pkwy, Whitestone, NY 11357</a></p>
+          </div>
+        </div>
+    </div>
+
+  </div>
+
+</footer>
+
+    <!-- place your code starting here -->
+
+
+
+    <!--
+    - datepicker widget (be careful when editing)
+    - displays two fields in two columns
+    - place this inside one of your page sections
+    -->
+
+    <!-- <table class="table">
+      <thead>
+        <tr class="grid-x">
+          <th class="cell small-6">Check in:
+            <input type="text" class="span2" value="" id="dpd1">
+          </th>
+          <th class="cell small-6">Check out:
+            <input type="text" class="span2" value="" id="dpd2">
+          </th>
+        </tr>
+        <tr class="grid-x">
+          <th class="cell">
+            <input type="submit" class="submit button radius small" value="Check Availability" data-open="confirmation-overlay">
+          </th>
+        </tr>        
+      </thead>
+    </table> -->
+
+    <!--
+    - overlay window with spans used to show data from datepicker
+    - edit the grid however you would like to fit your layout, but
+    - do not delete the <span class="dpd1"></span> and <span class="dpd2"></span> tags, these are used to show the user the dates they selected
+    - this section can go anywhere in your code, but to keep things organized, place it after the section where you have your date picker form
+    -->
+
+    <!-- <div id="confirmation-overlay" class="reveal" data-reveal>
+      <div class="grid-x">
+        <div class="cell large-7">
+          <div class="overlay">
+            <h1>Success</h1>
+            <h2>You've booked a room from <span class="dpd1"></span> to <span class="dpd2"></span>.</h2>
+          </div>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">&times;</span></button>
+    </div> -->
+
+    <!--
+
+    - do not delete anything below this line
+    - do not place any code below this line
+
+    -->
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/vendor/foundation-datepicker.min.js"></script>
+    <script src="js/app.js"></script>
+
+  </body>
+
+</html>

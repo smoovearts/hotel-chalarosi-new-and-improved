@@ -1,0 +1,494 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.menu {
+  border-bottom: 1px solid white;
+  display: inline-flex;
+}
+
+.menu a {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+}
+
+.menu a:hover {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #E6E6E6;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(0,0,0,0);
+}
+
+header img {
+}
+
+@media screen and (min-width: 40em){
+  header img {
+  position: absolute;
+  top: 2rem;
+  left: 4rem;
+  z-index: 1;
+  width: 38%;
+  }
+
+}
+
+@media screen and (min-width: 60em){
+  header img {
+  top: 2rem;
+  left: 5rem;
+  }
+
+}
+
+
+.hero video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.hero h2 {
+  position: absolute;
+  top: 22.7rem;
+  left: 2.1rem;
+}
+
+@media screen and (min-width: 40em){
+.hero h2 {
+  position: absolute;
+  top: 19rem;
+  left: 45rem;
+}
+}
+
+@media screen and (min-width: 60em){
+.hero h2 {
+  position: absolute;
+  top: 19rem;
+  left: 73rem;
+}
+}
+
+.hero h1 {
+  position: absolute;
+  top: 25rem;
+  left: 2rem;
+}
+
+@media screen and (min-width: 40em){
+.hero h1 {
+  position: absolute;
+  top: 22rem;
+  left: 30rem;
+}
+}
+
+@media screen and (min-width: 60em){
+.hero h1 {
+  position: absolute;
+  top: 22rem;
+  left: 58.1rem;
+}
+}
+
+
+.booking {
+  position: relative;
+  margin-top: -20rem;
+  z-index: 1;
+}
+
+.booking thead {
+  background-color: transparent;
+  border: 0;
+}
+
+.booking input[type="text"] {
+  border: 0;
+  background-color: rgba(255, 255, 255, .3);
+  border-radius: 10px;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+}
+
+
+.booking th {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+}
+
+.booking td {
+  background-color: #AEBD93;
+
+}
+
+.booking input[type="submit"] {
+  background-color: rgba(255, 255, 255, .1);
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.booking input[type="submit"]:hover {
+  background-color: #AEBD93;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.rooming {
+  padding: 8rem 0 0;
+}
+
+@media screen and (min-width: 40em){
+    .rooming {
+    padding: 2rem 0 0;
+  }
+}
+
+.rooming h3 {
+  padding-top: 7rem;
+}
+
+
+.rooming a {
+  background-color: #AEBD93;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+  border-radius: 10px;
+  margin: 1rem 0 0;
+  font-size: 16px;
+}
+
+.rooming a:hover {
+  background-color: #7D886B;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+  border-radius: 10px;
+}
+
+.rooming p {
+  font-family: utile-display, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #7C7C7C;
+  font-size: 20px;
+  padding: 0 0 1rem;
+}
+
+.rooming img {
+  border-radius: 30px;
+}
+
+@media screen and (min-width: 40em){
+  .rooming img {
+  border-radius: 30px;
+}
+}
+
+.amenities {
+  padding: 10rem 0 5rem;
+}
+
+.amenities a {
+  background-color: #AEBD93;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+  border-radius: 10px;
+  margin: 1rem 0 0;
+  font-size: 19px;
+}
+
+.amenities a:hover {
+  background-color: #7D886B;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+  border-radius: 10px;
+}
+
+.amenities p {
+  font-family: utile-display, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #7C7C7C;
+  font-size: 16px;
+  padding: 0 0 1rem;
+}
+
+.amenities h3 {
+  border-top: 1px solid #E8E8E8;
+  padding-top: 6rem;
+}
+
+.amenities img {
+  border-radius: 30px;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 40em){
+
+  .amenities img {
+    border-radius: 30px;
+  }
+
+}
+
+.amenities h4 {
+  font-family: utile-display, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #AEBD93;
+  padding: 1rem 0 0;
+  font-size: 30px;
+}
+
+@media screen and (min-width: 40em){
+  .amenities h4 {
+    font-family: utile-display, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #AEBD93;
+    padding: 1rem 0 0;
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 60em){
+  .amenities h4 {
+    font-family: utile-display, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #AEBD93;
+    padding: 1rem 0 0;
+    font-size: 30px;
+  }
+}
+
+h5 {
+  font-family: utile-display, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  color: white;
+  font-size: 23px;
+}
+
+h4 {
+  font-family: utile-display, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #AEBD93;
+  padding: 1rem 0 0;
+}
+
+h3 {
+  font-family: utile-display, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #AEBD93;
+  font-size: 47px;
+}
+
+h2 {
+  font-family: utile-display, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  color: white;
+}
+
+h1 {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+}
+
+
+h6 {
+  font-family: utile-display, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #7C7C7C;
+  font-size: 23px;
+  padding: 0 0 4rem;
+}
+
+.mission {
+  background-color: #AEBD93;
+  padding: 4rem 0;
+}
+
+.mission h5 {
+  font-family: utile-display, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  color: white;
+  font-size: 23px;
+}
+
+
+@media screen and (min-width: 40em){
+
+    .mission h5 {
+    font-family: utile-display, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: white;
+    font-size: 18px;
+    margin-left: 6rem;
+  }
+}
+
+@media screen and (min-width: 60em){
+
+    .mission h5 {
+    font-family: utile-display, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: white;
+    font-size: 23px;
+  }
+}
+
+.definition {
+  padding-top: 2rem;
+  border-top: 1px solid white;
+}
+
+@media screen and (min-width: 40em){
+
+    .definition {
+    padding-left: 3rem;
+    border-left: 1px solid white;
+    padding-top: 0rem;
+    border-top: 0px solid white;
+  }
+
+}
+
+.definition img {
+  height: 7rem;
+}
+
+footer {
+  padding: 5rem 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: url(../img/footer.jpg);
+  background-size: cover;
+}
+
+.footerlist {
+  padding-top: 1rem;
+  border-top: 1px solid white;
+}
+
+@media screen and (min-width: 40em){
+
+      .footerlist {
+    padding-left: 2rem;
+    border-left: 1px solid white;
+    padding-top: 0;
+    border-top: 0px solid white;
+  }
+
+}
+
+@media screen and (min-width: 60em){
+
+      .footerlist {
+    padding-left: 10rem;
+    border-left: 1px solid white;
+    padding-top: 0;
+    border-top: 0px solid white;
+  }
+
+}
+
+footer p {
+  font-family: utile-display, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  color: white;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 40em){
+
+    footer p {
+    font-family: utile-display, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: white;
+    font-size: 25px;
+  }
+}
+
+footer h1 {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    margin: 0;
+    font-size: 63px;
+}
+
+@media screen and (min-width: 40em){
+    h1 {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+  }
+}
+
+footer img {
+  width: 100%;
+}
+
+@media screen and (min-width: 60em){
+
+  footer img {
+    width: 80%;
+  }
+
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: #AEBD93;
+}
